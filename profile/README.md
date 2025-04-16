@@ -1,12 +1,119 @@
-## Hi there 👋
 
-<!--
+☝🏻 **디지털 신기술 도입과 비대면 금융 확산**에 따라, 본 프로젝트는 인터넷 기반 금융 서비스 확대와 비대면 채널 강화를 위한 전략 수립 및 시스템 개선을 목표로 합니다.
 
-**Here are some ideas to get you started:**
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+# 🏦 프로젝트 소개
+
+본 프로젝트는 **비대면 금융 서비스 확대**에 대응하기 위해,  
+기존 시스템을 **클라우드 환경에 최적화**하고 **확장성 있는 인프라**로 개선하는 것을 목표로 합니다.  
+
+**클라우드 기반 아키텍처 개선**을 통해 아래 요소들을 강화하고자 합니다:
+
+- 시스템 안정성
+- 운영 효율성
+- 장애 대응 속도  
+→ 궁극적으로 **디지털 전환에 유연하게 대응**할 수 있는 기반 마련
+
+---
+
+
+
+## 🎯 프로젝트 목표
+
+- ☁️ **클라우드 성능 최적화**  
+  클라우드 환경에서 발생하는 성능 문제 분석 및 최적화 기술 습득
+
+- 📊 **모니터링 시스템 구축**  
+  실시간 모니터링 환경을 구성하여 시스템 운영 효율성 강화
+
+- 🔐 **보안 및 인스턴스 관리**  
+  인스턴스 운영, 보안 이슈 대응 프로세스 전반 학습 및 적용
+
+---
+
+## 👨‍👩‍👧‍👦 팀 소개 및 역할
+
+| 이름 | 주요 역할 | 기타 담당 |
+|------|-----------|------------|
+| **김혜진** | - FE 개발<br>- JWT 인증 API 구현<br>- 클라우드 인프라 총괄<br>- 서비스 권한 관리<br>- 단위/통합 테스트 진행 | - Notion 관리<br>- 공지사항 안내<br> - CloudWatch 기반 모니터링 환경 구축<br>- 팀장<br>- 큐티 막내 |
+| **한예인** | - CloudWatch 로그 모니터링 | - 문서 작성 |
+| **홍재환** | - BE 개발<br>- EC2 인스턴스 설정 및 서버 배포<br>- RDS 인스턴스 설정<br>- 단위/통합 테스트 진행 | -API 명세서 작성  |
+
+
+---
+
+## ⚙️ 주요 기능
+
+- 🔐 로그인 / 회원가입 / 사용자 인증
+- 💰 예금 / 출금 / 송금 등 기본 금융 기능 제공
+
+---
+
+
+
+## 📌 Frontend 개발 환경
+
+| 구분 | 기술 / 라이브러리 | 버전 | 설명 |
+|------|-------------------|------|------|
+| **프레임워크** | React | 19.0.0 | 컴포넌트 기반 SPA UI 라이브러리 |
+|  | React DOM | 19.0.0 | 브라우저 렌더링 지원 |
+| **라우팅** | React Router DOM | 7.4.0 | SPA 라우팅 처리 |
+| **HTTP 통신** | Axios | 1.8.4 | REST API 통신용 클라이언트 |
+| **스크립트 빌드 도구** | React Scripts | 5.0.1 | CRA 기반 개발/빌드 환경 구성 |
+| **테스트 도구** | @testing-library/react | 16.2.0 | 컴포넌트 단위 테스트 |
+| **퍼포먼스 측정** | web-vitals | 2.1.4 | Core Web Vitals 성능 지표 측정 |
+| **언어/런타임** | JavaScript (ES6+) | - | 메인 프로그래밍 언어 |
+| **패키지 매니저** | npm | - | 의존성 및 스크립트 실행 관리 |
+
+### ✅ 기술 선정 이유
+
+| 기술 | 선택 이유 |
+|------|-----------|
+| **React** | 컴포넌트 기반 구조로 복잡한 UI 구성에 유리하며, SPA 구축에 최적화되어 있음. 커뮤니티가 활발해 라이브러리 연계도 우수함. |
+| **React Router DOM** | 전체 페이지 새로고침 없이 자연스러운 라우팅 구현 가능. 동적 페이지 구성에 적합. |
+| **Axios** | 요청/응답 인터셉터 기능이 뛰어나 JWT 자동 첨부 및 예외 처리에 유리함. |
+
+---
+
+
+
+## 📌 Backend 개발 환경
+
+| 구분 | 기술 / 라이브러리 | 버전 | 설명 |
+|------|-------------------|------|------|
+| **언어** | Java | 17 | 메인 개발 언어 |
+| **프레임워크** | Spring Boot | 3.4.4 | REST API 기반 웹 애플리케이션 프레임워크 |
+| **보안** | Spring Security | - | 인증/인가 처리 프레임워크 |
+|  | jjwt (api, impl, jackson) | 0.12.6 | JWT 생성/검증 라이브러리 |
+| **데이터베이스** | MariaDB | - | 운영용 관계형 데이터베이스 |
+| **ORM** | Spring Data JPA | - | 엔티티 매핑 및 CRUD 지원 |
+| **DB 드라이버** | mariadb-java-client | - | MariaDB용 JDBC 드라이버 |
+| **유틸리티** | Lombok | - | 보일러플레이트 코드 제거 |
+|  | Gson | 2.10.1 | JSON 직렬화/역직렬화 |
+| **빌드 도구** | Maven | - | 프로젝트 빌드/의존성 관리 |
+| **테스트** | JUnit 5 | - | 단위/통합 테스트 프레임워크 |
+
+### ✅ 기술 선정 이유
+
+| 기술 | 선택 이유 |
+|------|-----------|
+| **Spring Boot** | 설정이 간단하고 REST API 구축에 최적화되어 있으며, 확장성과 유지보수에 강점이 있음. |
+| **Spring Security** | 구조화된 인증/인가 처리 가능. 커스텀 필터 및 인터셉터와의 연계에 유리함. |
+| **JWT (jjwt)** | Stateless 인증을 위한 토큰 기반 인증 구현에 적합. Access/Refresh 토큰 구조 설계에 강점. |
+| **Spring Data JPA** | 객체지향적 DB 다루기가 가능하고, 복잡한 쿼리 없이도 CRUD 구현이 쉬움. |
+| **MariaDB** | 경량 오픈소스 DB로 빠르고 안정적. MySQL 호환성도 뛰어남. |
+| **Lombok** | 반복되는 코드를 줄여 코드 가독성과 생산성 향상에 기여. |
+| **JUnit + SpringBootTest** | 트랜잭션 롤백 기반 테스트로 DB 영향 없이 안정적인 테스트 가능. |
+
+---
+
+## 👥 협업 도구
+
+| 목적 | 도구 |
+|------|------|
+| **기획 및 문서화** | Notion |
+| **형상 관리** | GitHub |
+| **커뮤니케이션** | Discord |
+
+
+
